@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assessment2</string>
+    <string name="greeting">Hello user, welcome to BNKWallet! Make sure to fill out the details to complete your account.</string>
+    <string-array name="bank_array">
+        <item>DVG Bank</item>
+        <item>Banko DeMonko</item>
+        <item>RAVEN Bank</item>
+        <item>Bank Of The Nation</item>
+    </string-array>
+    <string name="thanks">Thank you for choosing BNKWALLET!</string>
+    <string name="BankName">Click To Get Bank</string>
+    <string name="Title">BNKWALLET</string>
+    <string name="Slogan">Live Your Life More Simple</string>
+</resources>

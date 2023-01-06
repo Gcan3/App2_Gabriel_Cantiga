@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:background="@drawable/finalbg">
+
+
+    <TextView
+        android:id="@+id/cardnumberGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Card Number:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bankNameGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Bank Name:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardnumberGuide" />
+
+    <ImageView
+        android:id="@+id/currentImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/savingsImg"
+        app:srcCompat="@drawable/money" />
+
+    <ImageView
+        android:id="@+id/savingsImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankSpinner"
+        app:srcCompat="@drawable/savemoney" />
+
+    <Spinner
+        android:id="@+id/bankSpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="148dp"
+        android:backgroundTint="#000000"
+        android:contentDescription="@string/BankName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/bankNameGuide"
+        app:layout_constraintTop_toBottomOf="@+id/cardnumberGuide" />
+
+    <EditText
+        android:id="@+id/cardNumberInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="39dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:hint="Enter card number"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardnumberGuide" />
+
+    <Button
+        android:id="@+id/currentbtn"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#3FA48B"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Current"
+        android:textColor="#F8C711"
+        android:textSize="20sp"
+        app:cornerRadius="100dip"
+        app:layout_constraintEnd_toStartOf="@+id/savingsbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/savingsbtn" />
+
+    <Button
+        android:id="@+id/savingsbtn"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#3FA58C"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Savings"
+        android:textColor="#FDC801"
+        android:textSize="20sp"
+        app:cornerRadius="100dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savingsImg" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Card Type:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankNameGuide" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

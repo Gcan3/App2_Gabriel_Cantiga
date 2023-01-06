@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalPage"
+    android:background="@drawable/finalbg">
+
+    <TextView
+        android:id="@+id/accountOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="57dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Account Overview:"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/bankNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Bank Name:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountOverview" />
+
+    <TextView
+        android:id="@+id/bank_name_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:textAlignment="center"
+        android:textColor="#3346BE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/bankNameText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CardNUmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Card Number:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankNameText" />
+
+    <TextView
+        android:id="@+id/CardTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Card Type:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardNUmText" />
+
+    <TextView
+        android:id="@+id/card_num_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:textColor="#3346BE"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/CardNUmText"
+        app:layout_constraintTop_toTopOf="@+id/CardNUmText" />
+
+    <TextView
+        android:id="@+id/card_type_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:textColor="#3346BE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/CardTypeText"
+        app:layout_constraintTop_toTopOf="@+id/CardTypeText" />
+
+    <TextView
+        android:id="@+id/thankYouText"
+        android:layout_width="255dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="41dp"
+        android:background="#6A3346BE"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="@string/thanks"
+        android:textAlignment="center"
+        android:textColor="#FEFE00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
